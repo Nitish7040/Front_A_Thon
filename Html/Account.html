@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>Account</title>
+<link rel="stylesheet" href="../Css/Stylesheet44.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+Bhai+2:wght@500&family=Baloo+Bhaijaan+2:wght@700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+
+
+<div class="container">
+
+<div class="navbar">
+<div class="logo">
+<a href="../index.html"><img src="../img/logo2.png" width="125px"></a>
+</div>
+<nav>
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="about us.html">About</a></li>
+<li><a href="contact us.html">Contact</a></li>
+<li><a href="account.html">Account</a></li>
+</ul>
+</nav>
+
+<a href="cart.html"><img src="../img/cart.png" width="30px" height="30px"></a>
+
+<img src="../img/menu.png" class="menu-icon">
+
+</div>
+
+</div>
+
+<div class="account-page">
+<div class="container">
+<div class="row">
+<div class="col-2">
+
+<img src="../img/football.png" width="100%">
+
+</div>
+
+<div class="col-2">
+
+<div class="form-container">
+
+<div class="form-btn">
+
+<span onclick="login()">Login</span>
+<span onclick="register()">Register</span>
+
+<hr id="indicator">
+
+</div>
+
+<form id="LoginForm">
+
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+
+<button type="Submit" class="btn">Login</button>
+
+<a href="">Forgot password</a>
+
+</form>
+
+<form id="RegiForm">
+
+<input type="text" placeholder="Username">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+
+<button type="Submit" class="btn">Register</button>
+
+</form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<div class="container">
+<div class="row">
+
+<div class="footer-col-1">
+
+<h3>Download Our App</h3>
+<p>Download App for Android and Ios mobile phones.</p>
+
+<div class="app-logo">
+<img src="../img/play-store.png">
+<img src="../img/app-store.png">
+</div>
+</div>
+
+<div class="footer-col-2">
+
+<img src="../img/logo-white.png">
+<p>Our Purpose is to Sustainably make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+
+</div>
+
+<div class="footer-col-3">
+
+<h3>Useful Links</h3>
+
+<ul>
+
+<li>Coupons</li>
+<li>Blog Post</li>
+<li>Return Policy</li>
+<li>Join Affiliate</li>
+
+</ul>
+
+</div>
+
+
+<div class="footer-col-4">
+
+<h3>Follow us</h3>
+
+<ul>
+
+<li>Facebook</li>
+<li>Twitter</li>
+<li>Instagram</li>
+<li>YouTube</li>
+
+</ul>
+
+</div>
+</div>
+<hr>
+<p class="copyright">Copyright 2022 - Rn Officials</p>
+</div>
+</div>
+
+
+
+<script>
+
+var LoginForm = document.getElementById("LoginForm");
+var RegiForm = document.getElementById("RegiForm");
+var indicator = document.getElementById("indicator");
+
+function register()
+{
+RegiForm.style.transform = "translatex(0px)";
+LoginForm.style.transform = "translatex(0px)";
+indicator.style.transform = "translatex(100px)";
+}
+
+
+function login()
+{
+RegiForm.style.transform = "translatex(300px)";
+LoginForm.style.transform = "translatex(300px)";
+indicator.style.transform = "translatex(0px)";
+}
+
+</script>
+
+
+</body>
+</html>
